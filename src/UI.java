@@ -1,6 +1,4 @@
-package application;
-
-import chess.ChessPiece;
+import modules.chess.ChessPiece;
 
 public class UI {
 	public static void printBoard(ChessPiece[][] pieces) {

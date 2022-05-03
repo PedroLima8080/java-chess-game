@@ -1,4 +1,4 @@
-package boardgame;
+package modules.boardgame;
 
 public class Piece {
 	protected Position position;

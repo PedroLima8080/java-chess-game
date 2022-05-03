@@ -1,4 +1,4 @@
-package boardgame;
+package modules.boardgame;
 
 public class Board {
 	private int rows;
@@ -35,6 +35,10 @@ public class Board {
 		return this.pieces[position.getRow()][position.getColumn()];
 	}
 	
+	public void placePiece(Piece piece, Position position) {
+		pieces[position.getRow()][position.getColumn()] = piece;
+		piece.position = position;
+	}
 	
 	
 }

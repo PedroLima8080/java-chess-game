@@ -1,13 +1,15 @@
-package chess;
+package modules.chess;
 
-import boardgame.Board;
-import boardgame.Piece;
+import modules.boardgame.Board;
+import modules.boardgame.Position;
+import modules.chess.pieces.Rook;
 
 public class ChessMatch {
 	private Board board;
 	
 	public ChessMatch() {
 		board = new Board(8, 8);
+		initialSetup();
 	}
 	
 	public ChessPiece[][] getPieces() {
@@ -20,5 +22,11 @@ public class ChessMatch {
 		}
 		
 		return mat;
+	}
+	
+	private void initialSetup() {
+		board.placePiece(new Rook(board, Color.WHITE), new Position(0, 0));
+		board.placePiece(new Rook(board, Color.WHITE), new Position(0, 1));
+		board.placePiece(new Rook(board, Color.WHITE), new Position(0, 2));
 	}
 }

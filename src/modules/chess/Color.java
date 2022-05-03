@@ -1,4 +1,4 @@
-package chess;
+package modules.chess;
 
 public enum Color {
 	BLACK,
